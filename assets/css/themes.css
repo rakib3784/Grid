@@ -1,0 +1,720 @@
+/* ========= Table Of Contents ========== 
+
+* 1 - Global Styles
+* 2 - Main Menu
+* 3 - Main Content
+* 4 - Pagination
+* 5 - Footer
+* 6 - Scroll To Top
+* 7 - Responsive Styles
+
+*/
+
+
+
+/* 1 --------- Global Styles --------- */
+
+a {
+	-webkit-transition: all 0.25s ease;
+	-moz-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+}
+a:hover {
+	text-decoration: none;
+}
+p {
+	letter-spacing: 0.25px;
+	line-height: 23px;
+}
+.section-title {
+	font-size: 22px;
+}
+.btn {
+	background: #333;
+	border:  1px solid #333;
+	border-radius: 0;
+	color: #fff;
+	font-size: 14px;
+	line-height: 45px;
+	padding: 0 20px;
+}
+.btn:hover {
+	background: #fff;
+	color: #333;
+}
+.form-control:focus,
+.form-control:active,
+button:focus,
+button:active {
+	box-shadow: none !important;
+	outline: 0 !important;
+}
+
+/* --------- Main Menu ---------- */
+#menu ul li ul{
+	position: absolute;
+    display: none;
+}
+#menu ul li ul li{
+	padding: 7px;
+    width: 154px;
+    left: -75px;
+    position: relative;
+    text-align: center;
+}
+#menu ul li:hover ul{
+	display: block;
+}
+.navbar-default {
+	background-color: #fff;
+	border: none;
+}
+
+.navbar-header,
+.navbar-brand,
+.navbar-nav {
+	float: none;
+	text-align: center;
+}
+
+.navbar-default .navbar-brand {
+	color: #000;
+	display: inline-block;
+	font-size: 75px;
+	font-weight: 500;
+	line-height: 1.5;
+	height: initial;
+	padding-bottom: 0px;
+	text-transform: uppercase;
+}
+
+.navbar-default .navbar-collapse {
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
+}
+
+.navbar-nav>li {
+	display: inline-block;
+	float: none;
+}
+
+.navbar-nav>li a {
+	padding: 15px 20px;
+}
+
+.navbar-default .navbar-nav a, 
+.navbar-default .navbar-nav a:focus, 
+.navbar-default .navbar-nav a:hover,
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+	background-color: #fff;
+	color: #333 !important;
+	font-size: 14px;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+}
+
+/* ------------- Widget --------------*/
+
+.widget {
+	font-size: 14px;
+    margin-top: 35px;
+}
+.widget-items{
+	font-size: 14px;
+    margin-top: -37px;
+    text-align: left;
+}
+.widget a{
+	color: #808080;
+}
+.widget-title {
+	color: #a6a6a6;
+	font-family: 'Roboto';
+	font-size: 24px;
+	font-weight: 700;
+	padding-bottom: 23px;
+	text-transform: capitalize;
+}
+.widget ul,
+.widget ol {
+	margin: 0;
+	padding: 0;
+}
+.widget li {
+	display: block;
+}
+.widget .btn {
+	background-color: #37b1ff;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+	margin-top: 35px;
+	padding: 19px 18px 16px;
+	text-transform: uppercase;
+}
+.widget_categories li {
+	line-height: 14px;
+	padding: 5px 0;
+}
+
+.widget .count {
+	color: #a6a6a6;
+	margin-left: 20px;
+	padding: 5px;
+	position: relative;
+}
+.widget .count:before,
+.widget .count:after {
+	color: #a6a6a6;
+	position: absolute;
+	top: 3px;
+}
+.search-form .search-field{
+	    width: 100%;
+    padding: 10px;
+}
+.widget .count:before {
+	content: '[';
+	left: 0;
+}
+.widget .count:after {
+	content: ']';
+	right: 0;
+}
+.widget article {
+	padding-bottom: 20px;
+}
+.widget article:last-child {
+	padding-bottom: 0;
+}
+.widget .entry-title {
+	color: #808080;
+	font-family: 'Roboto';
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 24px;
+}
+.widget .entry-title a {
+	color: #808080;
+}
+.widget_social a {
+	color: #666;
+	display: inline-block;
+	font-size: 18px;
+	text-align: left;
+	width: 25px;
+}
+
+/* 3 --------- Main Content ----------*/
+
+
+.main-content {
+	padding: 70px 0;
+}
+
+article {
+	margin-bottom: 70px;
+}
+
+.post-meta {
+	color: #777;
+	font-size: 11px;
+	letter-spacing: .65px;
+}
+
+.post-meta a,
+.post-meta a:hover,
+.post-meta a:focus {
+	color: #777;
+	text-decoration: none;
+}
+
+.post-meta .comments {
+	padding-left: 20px;
+	position: relative;
+}
+.post-meta .comments:before {
+	content: '//';
+	position: absolute;
+	left: 3px;
+	top: 1px;
+}
+
+.post-meta .comments i {
+	font-size: 12px;
+	padding-left: 3px;
+}
+
+article .entry-title {
+	font-size: 17px;
+	margin: 10px 0 15px;
+	text-transform: uppercase;
+}
+
+article .entry-title a,
+article .entry-title a:hover,
+article .entry-title a:focus {
+	color: #333;
+	text-decoration: none;
+}
+.site-description{
+	font-size: 14px;
+	padding-bottom: 25px;
+}
+
+/* 3.1 ------- Single Post ------- */
+
+.single-post .entry-thumbnail {
+	margin-bottom: 40px;
+}
+.single-post .entry-title {
+	font-size: 22px;
+	line-height: 39px;
+	margin: 5px 0 30px;
+}
+.entry-content p{
+	font-size: 14px;
+}
+.single-post .entry-content blockquote {
+	border-left: 4px solid #777;
+	color: #bfbfbf;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: 500;
+	line-height: 30px;
+	letter-spacing: 0.3px;
+	margin: 30px 30px 30px 45px;
+	padding: 0 0 0 30px;
+	position: relative;
+	z-index: 0;
+}
+.single-post .entry-content blockquote:before {
+	content: "\f10e";
+	color: #f7f7f7;
+	font-family: 'FontAwesome';
+	font-size: 40px;
+	position: absolute;
+	top: 10px;
+	left: 23px;
+	z-index: -1;
+}
+.description p {
+	clear: both;
+	font-size: 14px;
+}
+.avatar-default{
+	border-radius: 50%;
+}
+
+.description h1 {
+	display: block;
+	font-size: 24px;
+	margin-bottom: 0;
+	padding: 0 0 20px;
+}
+.description h2 {
+	display: block;
+	font-size: 22px;
+	margin-bottom: 0;
+	padding: 0 0 20px;
+}
+.description h3 {
+	display: block;
+	font-size: 20px;
+	margin-bottom: 0;
+	padding: 0 0 20px;
+}
+.description h4 {
+	display: block;
+	font-size: 18px;
+	margin-bottom: 0;
+	padding: 0 0 20px;
+}
+.description h5 {
+	display: block;
+	font-size: 16px;
+	margin-bottom: 0;
+	padding: 0 0 20px;
+}
+.description ul,.description ol {
+	padding: 15px 0 15px 30px;
+}
+.description li {
+	line-height: 26px;
+	padding: 5px 0 5px 15px;
+	position: relative;
+}
+.description ul li {
+	list-style: none;
+}
+.description ul li:before {
+	content: "\f058";
+	color: #f28f67;
+	font-family: 'FontAwesome';
+	font-size: 14px;
+	position: absolute;
+	top: 4px;
+	left: -10px;
+}
+.description div[class*="col-"] {
+	margin: 0 -15px;
+	padding: 15px;
+}
+.description div[class*="col-"] h1~h6 {
+	padding-top: 0;
+}
+.description img {
+	max-width: 100%;
+	padding-right: 20px;
+}
+.post-bottom {
+	border: 1px solid #777;
+	color: #bfbfbf;
+	display: inline-block;
+	font-weight: 700;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: 400;
+	margin-top: 39px;
+	padding: 20px;
+	text-align: center;
+	width: 100%;
+}
+.post-bottom a {
+	color: #333;
+	display: inline-block;
+	margin-top: 3px;
+	padding: 0 5px 0 0;
+	position: relative;
+}
+.about-author {
+	margin: 60px 0;
+}
+.about-author .author-avatar {
+	float: left;
+	margin: 0 20px 0 0;
+	max-width: 90px;
+	padding: 0;
+}
+.author-avatar img{
+	border-radius: 50%;
+}
+.about-author .author-name {
+	font-size: 15px;
+	text-transform: capitalize;
+}
+.about-author .author-social a {
+	color: #999;
+	font-size: 14px;
+	padding-right: 4px;
+}
+.about-author .description {
+	line-height: 22px;
+}
+.nav-previous a:before{
+	content: "\f100";
+	font-family: FontAwesome;
+	padding-right: 2px;
+}
+.nav-next a:after{
+	content: "\f101";
+	font-family: FontAwesome;
+	padding-left: 2px;
+}
+.nav-previous,.nav-next a{
+	font-size: 20px;
+}
+.hentry {
+    margin-bottom: 50px;
+}
+/* -------- Comments -------- */
+.comment-body p{
+	font-size: 11px;
+}
+.form-submit .submit{
+	padding: 8px;
+    font-size: 14px;
+}
+.logged-in-as a{
+	font-size: 14px;
+}
+.single-post .comment-section,
+.single-post .respond {
+	padding: 40px 0 0;
+}
+.single-post .comment-list {
+	display: inline-block;
+	margin-top: 10px;
+	padding: 0;
+}
+.comment-list li {
+	display: inline-block;
+}
+.comment-list .media {
+	margin: 0;
+}
+.comment-item {
+	border-bottom: 1px solid #777;
+	padding: 35px 0;
+}
+.single-post .comment-section .author {
+	color: #333;
+	display: block;
+	font-size: 15px;
+	font-weight: 500;
+	letter-spacing: 0.25px;
+	padding-bottom: 4px;
+	text-transform: capitalize;
+}
+.single-post .comment-section .author a {
+	color: #333;
+}
+.comment-list .author-avatar {
+	float: left;
+	margin: 0 15px 0 0;
+	max-width: 90px;
+	padding: 0;
+}
+.comment-metadata {
+	color: #777;
+	font-size: 14px;
+	font-weight: 700;
+}
+.comment-metadata time {
+	background: #fff;
+	color: #777;
+	font-size: 13px;
+	font-weight: 400;
+	height: initial;
+	line-height: initial;
+	width: initial;
+	padding: 0;
+}
+.comment-metadata a {
+	color: #777;
+}
+.comment-list .description {
+	clear: both;
+	display: block;
+	margin-top: 0 !important;
+	padding-top: 15px;
+}
+.comment-list .reply {
+	color: #333;
+	display: block;
+	font-size: 13px;
+	font-weight: 400;
+	padding-top: 16px;
+}	
+.comment-list .children {
+	padding-left: 60px;
+}
+.respond {
+	margin-top: -14px;
+}
+.comment-form {
+	margin-top: 38px;
+}
+.comment-form .form-control {
+	border: 1px solid #777;
+	border-radius: 0;
+	color: #333;
+	font-size: 15px;
+	height: initial;
+	margin-bottom: 20px;
+	padding: 17px 15px;
+}
+.comment-form .btn {
+	line-height: 55px;
+	padding: 0 28px;
+}
+
+
+/* 4 --------- Pagination ----------*/
+
+.pagination {
+	margin: 0;
+	padding: 0 15px;
+	width: 100%;
+}
+
+.pagination {
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.pagination a,
+.pagination a:hover,
+.pagination a:focus {
+	color: #333;
+	text-decoration: none;
+}
+
+.pagination a i {
+	font-size: 20px;
+}
+
+.pagination a.prev i {
+	float: left;
+	margin-top: 1px;
+	padding-right: 2px;
+}
+
+.pagination a.next i {
+	padding-left: 2px;
+}
+.page-content p{
+	font-size: 13px;
+}
+
+/* 5 --------- Footer --------- */
+
+footer {
+	border-top: 1px solid #333;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	padding: 40px 0;
+}
+footer a {
+	color: #777;
+}
+footer a:hover {
+	color: #333;
+	text-decoration: none;
+}
+
+/* 6 --------- Scroll To Top ----------*/
+
+.scroll-to-top {
+	position: fixed;
+	right: 35px;
+	bottom: 35px;
+	font-size: 30px;
+	height: 40px;
+	width: 40px;
+	background-color: #333;
+	line-height: 35px;
+	color: #ffffff;
+	text-align: center;
+	opacity: .3;
+	cursor: pointer;
+	z-index: 1;
+
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+
+.scroll-to-top:hover {
+	opacity: 1;
+}
+
+
+/* 7 --------- Responsive Styles ----------*/
+
+@media screen and (max-width: 767px) {
+	.navbar-default {
+		margin: 0;
+	}
+	.navbar-header {
+		text-align: left;
+	}
+	.navbar-default .navbar-toggle {
+		border: none;
+		font-size: 20px;
+		margin: 5px 15px;
+	}
+	.navbar-default .navbar-toggle:focus, 
+	.navbar-default .navbar-toggle:hover {
+		background-color: #fff;
+	}
+	.navbar-default .navbar-brand {
+		font-size: 30px;
+		line-height: 1;
+		padding: 15px;
+	}
+	.navbar-default .navbar-collapse {
+		padding: 0;
+	}
+	.navbar-nav {
+		margin: 0;
+		padding: 15px;
+	}
+	.navbar-nav>li {
+		display: block;
+		text-align: left;
+	}
+	.navbar-default .navbar-nav>li a {
+		font-size: 12px !important;
+		padding: 7px 0;
+	}
+	.main-content {
+		padding: 40px 0;
+	}
+	.grid-layout article {
+		margin-bottom: 40px;
+	}
+	article .entry-title {
+		font-size: 16px;
+	}
+	.pagination {
+		font-size: 13px;
+		padding: 0;
+	}
+	.pagination a i {
+		font-size: 16px;
+	}
+	footer {
+		padding: 25px 0;
+	}
+	.scroll-to-top {
+		font-size: 20px;
+		height: 30px;
+		width: 30px;
+		line-height: 28px;
+		right: 15px;
+		bottom: 15px;
+	}
+	.single-post .entry-title {
+		font-size: 18px;
+		line-height: 35px;
+		margin: 5px 0 15px;
+	}
+	.single-post .entry-content blockquote {
+		font-size: 16px;
+		line-height: 27px;
+		letter-spacing: 0.2px;
+		margin: 30px 0 30px 0;
+		padding: 0 0 0 15px;
+	}
+	.single-post .description div[class*="col-"] {
+		padding: 0 15px;
+	}
+	.single-post .description li {
+		padding: 0px 0 0px 15px;
+	}
+	.single-post .description ul li:before {
+		top: 1px;
+	}
+	.about-author .author-avatar,
+	.about-author .author-details,
+	.comment-list .author-avatar,
+	.comment-list .comment-details {
+		display: block;
+		float: none;
+		margin: 15px 0;
+	}
+	.comment-item {
+		padding: 20px 0;
+	}
+	.media-body {
+		max-width: 100%;
+	}
+	.comment-list .children {
+		padding-left: 0;
+	}
+}
